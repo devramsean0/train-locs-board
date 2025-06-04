@@ -43,7 +43,7 @@ I went for the [ESP32-S3-Wroom-1-N8](https://www.lcsc.com/product-detail/WiFi-Mo
 
 #### Other Misc Parts
 USB C Connector:\
-I chose the TODO, due to it being widely liked and probably it's cheapness idk
+I chose the [G-Switch GT-USB-7010ASV](https://www.lcsc.com/product-detail/USB-Connectors_G-Switch-GT-USB-7010ASV_C2988369.html) due to it being widely liked, easy to solder and cheap. 
 
 Voltage Regulator:\
 I chose the [TP74333PDQNR](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_TECH-PUBLIC-TP74333PDQNR_C2923398.html) due to it being very cheap, whilst outputting a lot of current (important for how hungry the ESP32 is).
@@ -52,3 +52,30 @@ The 5 part minimum is annoying though
 Buttons:\
 I chose the [TS-1089S](https://www.lcsc.com/product-detail/Tactile-Switches_XUNPU-TS-1089S-02526_C455282.html) buttons, because I think they look nice, but they are more expensive.
 
+All other parts, I will just go with whatever is cheapest when it gets to the BOM.
+
+### Designing the layout
+I used this image of the Midlands Mainline as a source the for the stations and rough physical layout
+![Midlands Mainline Route](https://commons.wikimedia.org/wiki/File:Midland_Main_Line.png#/media/File:Midland_Main_Line.png)
+
+I then went station by station, finding out the layout and number of platforms at each station:
+
+| Station | Code | Count | Layout |
+| ------- | ---- | ----- | ------ |
+| Sheffield | | |
+| Dronfield | | |
+| Chesterfield | | |
+| Alfreton | | |
+| Belper | | |
+| Derby | | |
+| Nottingham | | |
+| East Midlands Parkway | | |
+| Loughborough | | |
+| Leicester | | |
+| Market Harborough | | |
+| Kettering | | |
+| Wellingborough | | |
+| Bedford | | |
+| Luton | | |
+| St Albans City | | |
+| London St Pancreas | | |
