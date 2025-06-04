@@ -42,12 +42,13 @@ Otherwise, I generally like the S3 series of modules due to their onboard GPIO a
 I went for the [ESP32-S3-Wroom-1-N8](https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-S3-WROOM-1-N8_C2913198.html), due to it doing most of the work, and it being relatively affordable.
 
 #### Other Misc Parts
-USB C Connector:
+USB C Connector:\
+I chose the TODO, due to it being widely liked and probably it's cheapness idk
 
+Voltage Regulator:\
+I chose the [TP74333PDQNR](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_TECH-PUBLIC-TP74333PDQNR_C2923398.html) due to it being very cheap, whilst outputting a lot of current (important for how hungry the ESP32 is).
+The 5 part minimum is annoying though
 
-Voltage Regulator:
-
-
-Buttons:
+Buttons:\
 I chose the [TS-1089S](https://www.lcsc.com/product-detail/Tactile-Switches_XUNPU-TS-1089S-02526_C455282.html) buttons, because I think they look nice, but they are more expensive.
 
