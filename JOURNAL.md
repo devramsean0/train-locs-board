@@ -87,10 +87,11 @@ The total time spent on this across the 2 days was 2 hours and 25 mins.
 ## 05/05/2025
 So, 105 leds, after doing the napkin neopixel math:
 
-$105 x 60mA / 1000 = 6.3 Amps
+$105 x 60mA / 1000 = 6.3 Amps$
 
 Which is a uh lot, so what is it at the reduced brightness 20mA will give?
 
 $105 x 20mA / 1000 = 6.1 Amps$
 
-This is still a lot, but it does happen to fall under the requirements for USB PD (It does make it a much more complex bit of circuitry however, as I would need 3 Amps in total probably, which is much higher than the standard 500mA.
+This is still a lot, but it does happen to fall under the requirements for USB PD (It does make it a much more complex bit of circuitry however, as I would need 3 Amps in total probably, which is much higher than the standard 500mA)
+
