@@ -1,5 +1,5 @@
 # Train Locs Board
-## 04/05/2025
+## 04/05/2025 & 05/06/2025
 This is going to be a little LED train status board, This will show the Operating Company of a train whenever it gets into the station on the UK Midlands Mainline
 ### Design
 I think my basic design guidelines, electronics wise are:
@@ -69,13 +69,28 @@ I then went station by station, finding out the layout and number of platforms a
 | Belper | | 2 |
 | Derby | | 14 |
 | Nottingham | | 17 |
-| East Midlands Parkway | | |
-| Loughborough | | |
-| Leicester | | |
-| Market Harborough | | |
-| Kettering | | |
-| Wellingborough | | |
-| Bedford | | |
-| Luton | | |
-| St Albans City | | |
-| London St Pancreas | | |
+| East Midlands Parkway | | 4  |
+| Loughborough | | 3 |
+| Leicester | | 4  |
+| Market Harborough | | 2  |
+| Kettering | | 4  |
+| Wellingborough | | 3  |
+| Bedford | | 5  |
+| Luton | | 5  |
+| St Albans City | | 4 |
+| London St Pancreas | | 13 |
+
+This is roughly 105 leds (lots of leds :yay:)
+
+The total time spent on this across the 2 days was 2 hours and 25 mins.
+
+## 05/05/2025
+So, 105 leds, after doing the napkin neopixel math:
+
+$105 x 60mA / 1000 = 6.3 Amps
+
+Which is a uh lot, so what is it at the reduced brightness 20mA will give?
+
+$105 x 20mA / 1000 = 6.1 Amps$
+
+This is still a lot, but it does happen to fall under the requirements for USB PD (It does make it a much more complex bit of circuitry however, as I would need 3 Amps in total probably, which is much higher than the standard 500mA.
