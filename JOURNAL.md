@@ -56,19 +56,19 @@ All other parts, I will just go with whatever is cheapest when it gets to the BO
 
 ### Designing the layout
 I used this image of the Midlands Mainline as a source the for the stations and rough physical layout
-![Midlands Mainline Route](https://commons.wikimedia.org/wiki/File:Midland_Main_Line.png#/media/File:Midland_Main_Line.png)
+![Midlands Mainline Route](https://upload.wikimedia.org/wikipedia/commons/2/26/Midland_Main_Line.png)
 
 I then went station by station, finding out the layout and number of platforms at each station:
 
-| Station | Code | Count | Layout |
-| ------- | ---- | ----- | ------ |
-| Sheffield | | |
-| Dronfield | | |
-| Chesterfield | | |
-| Alfreton | | |
-| Belper | | |
-| Derby | | |
-| Nottingham | | |
+| Station | Stanox Code | Count | Layout |
+| ------- | ----------- | ----- | ------ |
+| Sheffield | | 16 |
+| Dronfield | | 2 |
+| Chesterfield | 3 | |
+| Alfreton | | 2 |
+| Belper | | 2 |
+| Derby | | 14 |
+| Nottingham | | 17 |
 | East Midlands Parkway | | |
 | Loughborough | | |
 | Leicester | | |
