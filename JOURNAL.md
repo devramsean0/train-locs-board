@@ -64,7 +64,7 @@ I then went station by station, finding out the layout and number of platforms a
 | ------- | ----------- | ----- | ------ |
 | Sheffield | | 16 |
 | Dronfield | | 2 |
-| Chesterfield | 3 | |
+| Chesterfield | | 3 |
 | Alfreton | | 2 |
 | Belper | | 2 |
 | Derby | | 14 |
