@@ -137,3 +137,13 @@ The ESP32 module reference schematic is this (when I remove everything which is 
 It also occured to me that I needed a shift register, because driving neopixels from 3.3v is kinda cursed, especially with 105 of them. So I chose TI's TXB0106PW
 
 ![Microcontroller Schematic V1](Journal/images/microcontroller-power-v1.png)
+
+### The Display
+This is the whole 105 leds bit, I started by placing all the leds for each station linked together going from lowest -> highest platform number.
+I also decided to place a 1000uF capacitor at the start of the chain to help handle sudden current changes across the string.
+
+I later decided to put one on each schematic page (of which the display elements became 2)
+
+![Display P1 Schematic V1](Journal/images/schematic-display-p1-v1.png)
+![Display P2 Schematic V1](Journal/images/schematic-display-p2-v1.png)
+

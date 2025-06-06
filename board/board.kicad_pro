@@ -419,6 +419,14 @@
     [
       "be360d18-9fa9-4ffe-af54-9dec7a1cbe21",
       "Micrcontroller"
+    ],
+    [
+      "1f31e997-0b33-46b7-9567-f7802b85367a",
+      "Display"
+    ],
+    [
+      "3bef3bd9-6f6c-4818-b8bd-f81108ff6d22",
+      "Display 2"
     ]
   ],
   "text_variables": {}
