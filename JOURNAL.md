@@ -157,7 +157,7 @@ Specifically:
 
 I went and used easyeda2kicad to download the footprints for the button, mosfet and voltage regulator.
 
-![Unplaced Footprints](Journal/images/pcb-unplaced-footprints.png)
+![Unplaced Footprints](Journal/images/pcb-footprints-unplaced.png)
 
 Oh, and I was joking about the layout, I get to do more design.
 
