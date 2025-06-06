@@ -1,0 +1,61 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "380d0889-29f1-4d98-b1bb-ce6ede3c8d67")
+	(paper "A4")
+	(title_block
+		(title "Train Locs Board")
+		(company "Sean Outram")
+		(comment 1 "A TrainTrackr like board for the Midlands Mainline")
+	)
+	(lib_symbols)
+	(sheet
+		(at 16.51 15.24)
+		(size 53.34 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bd274052-b536-4fa6-b064-0da137bd167d")
+		(property "Sheetname" "Power"
+			(at 16.51 14.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 16.51 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "board"
+				(path "/380d0889-29f1-4d98-b1bb-ce6ede3c8d67"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

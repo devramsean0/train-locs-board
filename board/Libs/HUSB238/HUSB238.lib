@@ -1,0 +1,34 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model HUSB238
+#/17450231/1428352/2.50/11/3/Integrated Circuit
+DEF HUSB238 IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "HUSB238" 1050 200 50 H V L CNN
+F2 "SON50P300X300X80-11N-D" 1050 100 50 H I L CNN
+F3 "https://en.hynetek.com/uploadfiles/site/219/news/4459b599-ce6b-4d92-83cc-13212cca0672.pdf" 1050 0 50 H I L CNN
+F4 "USB Type-C Power Delivery Sink" 1050 -100 50 H I L CNN "Description"
+F5 "0.8" 1050 -200 50 H I L CNN "Height"
+F6 "Hynetek" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "HUSB238" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1050 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 1050 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X VIN 1 0 0 200 R 50 50 0 0 P
+X D+ 2 0 -100 200 R 50 50 0 0 P
+X D- 3 0 -200 200 R 50 50 0 0 P
+X CC1 4 0 -300 200 R 50 50 0 0 P
+X CC2 5 0 -400 200 R 50 50 0 0 P
+X GND 11 600 -1000 200 U 50 50 0 0 P
+X GATE 10 1200 0 200 L 50 50 0 0 P
+X ISET 9 1200 -100 200 L 50 50 0 0 P
+X VSET 8 1200 -200 200 L 50 50 0 0 P
+X SCL 7 1200 -300 200 L 50 50 0 0 P
+X SDA 6 1200 -400 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

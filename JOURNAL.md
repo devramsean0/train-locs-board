@@ -95,3 +95,36 @@ $105 x 20mA / 1000 = 6.1 Amps$
 
 This is still a lot, but it does happen to fall under the requirements for USB PD (It does make it a much more complex bit of circuitry however, as I would need 3 Amps in total probably, which is much higher than the standard 500mA)
 
+And, I don't believe you can have a USB C connector doing both data and PD, so the design now needs 2 USB C connectors on it.
+
+### Choosing a USB PD IC
+
+To start with, I went looking on adafruit's store to find a PD breakout board. I find this to be an effective way to find reasonable chips that are known to work.
+I then set the requirement of not needing to use i2c for configuration.
+Finally, it needed to be avaliable at LCSC. This lead me to decide on the [HUSB238](https://www.lcsc.com/product-detail/USB-Converters_Hynetek-HUSB238_002DD_C7471904.htm)
+
+It also happens to not need too many capacitors and resistors according to it's Typical Application Circuit.
+![HUSB238 Typical Application Circuit](Journal/images/husb238-typical.png)
+
+According to the VSET pin table in the datasheet, I need a 0k resistor (meaning just bridge it to GND) for 5V
+![HUSB238 VSET selection table](Journal/images/husb238-vset-table.png)
+
+According to the ISET pin table in the datasheet, I need a 22.6k resistor for 3A of current
+![HUSB238 ISET selection table](Journal/images/husb238-iset-table.png)
+
+### The Non display parts of the schematic
+Okay, so lets start actually working on the schematic.
+I normally design in the following order
+
+```mermaid
+flowchart TB
+
+power[Power] ---> microcontroller[Microcontroller]
+micrcontroller ---> specialstuff[Special Stuff]
+```
+
+
+I decided to switch voltage regulators to the SE5120, due to it being much easier to solder.
+And 1 and a bit hours in, I have a the basis of the power supply
+
+![Power Schematic V1](Journal/images/schematic-power-v1.png)
