@@ -120,11 +120,11 @@ I normally design in the following order
 flowchart TB
 
 power[Power] ---> microcontroller[Microcontroller]
-micrcontroller ---> specialstuff[Special Stuff]
+microcontroller ---> specialstuff[Special Stuff]
 ```
 
 
-I decided to switch voltage regulators to the SE5120, due to it being much easier to solder.
+I decided to switch voltage regulators to the SED5120, due to it being much easier to solder.
 And 1 and a bit hours in, I have a the basis of the power supply
 
 ![Power Schematic V1](Journal/images/schematic-power-v1.png)
@@ -136,7 +136,7 @@ The ESP32 module reference schematic is this (when I remove everything which is 
 ![ESP32 Core](Journal/images/esp32-needed.png)
 It also occured to me that I needed a shift register, because driving neopixels from 3.3v is kinda cursed, especially with 105 of them. So I chose TI's TXB0106PW
 
-![Microcontroller Schematic V1](Journal/images/microcontroller-power-v1.png)
+![Microcontroller Schematic V1](Journal/images/schematic-microcontroller-power-v1.png)
 
 ### The Display
 This is the whole 105 leds bit, I started by placing all the leds for each station linked together going from lowest -> highest platform number.
@@ -146,4 +146,25 @@ I later decided to put one on each schematic page (of which the display elements
 
 ![Display P1 Schematic V1](Journal/images/schematic-display-p1-v1.png)
 ![Display P2 Schematic V1](Journal/images/schematic-display-p2-v1.png)
+
+### Actually doing the layout (The fun part :p)
+At this point I needed to go track down footprints for it all.
+
+Specifically:
+- The USB C
+- The button
+- The Mosfet
+
+I went and used easyeda2kicad to download the footprints for the button, mosfet and voltage regulator.
+
+![Unplaced Footprints](Journal/images/unplaced-footprints.png)
+
+Oh, and I was joking about the layout, I get to do more design.
+
+The first step was to take the station layouts, and turn it into a figjam diagram.
+
+
+And like an hour later with a bit of guesswork, I got this!
+![Figma Shenanigans](Journal/images/FigmaShenanigans.png)
+
 

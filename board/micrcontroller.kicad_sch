@@ -3586,6 +3586,16 @@
 		)
 		(uuid "71366b84-514a-4812-8281-1b22110ce324")
 	)
+	(label "USER_BUTTON"
+		(at 81.28 90.17 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b28b4fbe-13a9-4c30-a77e-fe7a8f9fe17e")
+	)
 	(label "USB_D+"
 		(at 179.07 52.07 0)
 		(effects
@@ -4081,7 +4091,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 36.83 114.3 0)
 			(effects
 				(font
@@ -4193,6 +4203,72 @@
 			(project "board"
 				(path "/380d0889-29f1-4d98-b1bb-ce6ede3c8d67/be360d18-9fa9-4ffe-af54-9dec7a1cbe21"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d572eb5-83d0-46b0-80da-c4582e3f451d")
+		(property "Reference" "#PWR072"
+			(at 81.28 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26572863-30d4-4ab7-aab9-07e9ca79145e")
+		)
+		(instances
+			(project "board"
+				(path "/380d0889-29f1-4d98-b1bb-ce6ede3c8d67/be360d18-9fa9-4ffe-af54-9dec7a1cbe21"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -4356,7 +4432,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LCSC:SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1"
 			(at 106.68 39.37 0)
 			(effects
 				(font
@@ -4426,7 +4502,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 227.0252 35.56 0)
 			(effects
 				(font
@@ -4496,7 +4572,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 16.51 114.3 0)
 			(effects
 				(font
@@ -4575,7 +4651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 110.1852 29.21 0)
 			(effects
 				(font
@@ -4824,7 +4900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 56.642 35.56 90)
 			(effects
 				(font
@@ -4892,7 +4968,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
 			(at 34.29 39.37 0)
 			(effects
 				(font
@@ -5142,7 +5218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 127.762 27.94 90)
 			(effects
 				(font
@@ -5345,7 +5421,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 172.4152 59.69 0)
 			(effects
 				(font
@@ -5415,7 +5491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 14.732 106.68 90)
 			(effects
 				(font
@@ -5485,7 +5561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 98.7552 29.21 0)
 			(effects
 				(font
@@ -5621,7 +5697,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 24.892 106.68 90)
 			(effects
 				(font
@@ -5691,7 +5767,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 65.532 35.56 90)
 			(effects
 				(font
@@ -5827,7 +5903,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 26.67 114.3 0)
 			(effects
 				(font
@@ -5906,7 +5982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 172.4152 49.53 0)
 			(effects
 				(font
@@ -6015,6 +6091,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 81.28 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d832893b-ba37-4adc-a178-5b9814f0d242")
+		(property "Reference" "SW2"
+			(at 82.55 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 82.55 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LCSC:SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1"
+			(at 76.2 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cb24c87c-fa45-422e-bd0b-5c4e6117aa74")
+		)
+		(pin "1"
+			(uuid "404d004a-b733-4a54-aad0-72d39d684434")
+		)
+		(instances
+			(project "board"
+				(path "/380d0889-29f1-4d98-b1bb-ce6ede3c8d67/be360d18-9fa9-4ffe-af54-9dec7a1cbe21"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 200.66 27.94 0)
 		(unit 1)
@@ -6108,7 +6254,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 201.6252 35.56 0)
 			(effects
 				(font
@@ -6176,7 +6322,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 121.92 40.3352 0)
 			(effects
 				(font
@@ -6246,7 +6392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 35.052 106.68 90)
 			(effects
 				(font

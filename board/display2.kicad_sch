@@ -791,9 +791,9 @@
 		)
 		(uuid "5f023a07-1955-43b6-a3e7-0884e55e3303")
 	)
-	(text "Bedford"
+	(text "Luton"
 		(exclude_from_sim no)
-		(at 136.652 70.612 0)
+		(at 134.62 70.612 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3989,7 +3989,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 110.1852 26.67 0)
 			(effects
 				(font

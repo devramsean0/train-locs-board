@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "HUSB238")(type "Legacy")(uri "${KIPRJMOD}/Libs/HUSB238/HUSB238.lib")(options "")(descr ""))
   (lib (name "TrainLocsBoard")(type "KiCad")(uri "${KIPRJMOD}/Libs/TrainLocsBoard/TrainLocsBoard.kicad_sym")(options "")(descr ""))
+  (lib (name "LCSC")(type "KiCad")(uri "${KIPRJMOD}/Libs/LCSC.kicad_sym")(options "")(descr ""))
 )
