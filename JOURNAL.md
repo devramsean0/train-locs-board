@@ -128,3 +128,12 @@ I decided to switch voltage regulators to the SE5120, due to it being much easie
 And 1 and a bit hours in, I have a the basis of the power supply
 
 ![Power Schematic V1](Journal/images/schematic-power-v1.png)
+
+Now, time to start on the Microcontroller.
+I'm including 3 status LEDs on the board, this is because they are an easy way to see the state of things.
+
+The ESP32 module reference schematic is this (when I remove everything which is actually not connected:
+![ESP32 Core](Journal/images/esp32-needed.png)
+It also occured to me that I needed a shift register, because driving neopixels from 3.3v is kinda cursed, especially with 105 of them. So I chose TI's TXB0106PW
+
+![Microcontroller Schematic V1](Journal/images/microcontroller-power-v1.png)

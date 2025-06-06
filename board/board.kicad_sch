@@ -52,6 +52,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 77.47 15.24)
+		(size 48.26 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "be360d18-9fa9-4ffe-af54-9dec7a1cbe21")
+		(property "Sheetname" "Micrcontroller"
+			(at 77.47 14.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "micrcontroller.kicad_sch"
+			(at 77.47 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "board"
+				(path "/380d0889-29f1-4d98-b1bb-ce6ede3c8d67"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

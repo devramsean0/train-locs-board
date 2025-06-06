@@ -415,6 +415,10 @@
     [
       "bd274052-b536-4fa6-b064-0da137bd167d",
       "Power"
+    ],
+    [
+      "be360d18-9fa9-4ffe-af54-9dec7a1cbe21",
+      "Micrcontroller"
     ]
   ],
   "text_variables": {}
