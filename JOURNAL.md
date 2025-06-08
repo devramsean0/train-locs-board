@@ -168,3 +168,18 @@ And like an hour later with a bit of guesswork, I got this!
 ![Figma Shenanigans](Journal/images/FigmaShenanigans.png)
 
 
+## 07/05/2025
+I then needed to take the figma design, into an inkscape design (We will get to layout soon, I promise)
+
+An hour ish later me, realised it would be a good idea to put the ESP32 on first, so that is what I did.
+
+## 08/05/2025
+I continued laying out the ESP32 today, I realised It would be a good idea to rotate it, and I shifted around the pins to make it easier to route.
+![Improved Pinout](Journal/images/microcontroller-ImprovedPinout.png)
+
+I also realised I forgot the reset circuitry (whoops), so I added it roughly following the reference schematic.
+![Reset!](Journal/images/micrcontroller-reset.png)
+
+And, like half an hour later, I have a fully completed ESP32
+![ESP32 Wired](Journal/images/pcb-esp32-wired.png)
+
