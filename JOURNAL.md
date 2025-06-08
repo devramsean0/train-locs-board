@@ -183,3 +183,12 @@ I also realised I forgot the reset circuitry (whoops), so I added it roughly fol
 And, like half an hour later, I have a fully completed ESP32
 ![ESP32 Wired](Journal/images/pcb-esp32-wired.png)
 
+After my first 3 stations, I took this screenshot. I decided eventually to just place it all down in my PCB directly, without inkscape.
+![First 3 Stations](Journal/images/pcb-first3.png)
+
+And a few more stations (and time) I got to this
+![First 7 Stations](Journal/images/pcb-first7.png)
+I also decided to move the "stations" closer together.
+
+At this point I considered deleting the additional boxes and station text, to bring it more inline with my reference artwork. but I am yet to come to a descision.
+
