@@ -1,5 +1,5 @@
 # Train Locs Board
-## 04/05/2025 & 05/06/2025
+## 04/06/2025 & 05/06/2025
 This is going to be a little LED train status board, This will show the Operating Company of a train whenever it gets into the station on the UK Midlands Mainline
 ### Design
 I think my basic design guidelines, electronics wise are:
@@ -84,7 +84,7 @@ This is roughly 105 leds (lots of leds :yay:)
 
 The total time spent on this across the 2 days was 2 hours and 25 mins.
 
-## 05/05/2025
+## 05/06/2025
 So, 105 leds, after doing the napkin neopixel math:
 
 $105 x 60mA / 1000 = 6.3 Amps$
@@ -168,12 +168,12 @@ And like an hour later with a bit of guesswork, I got this!
 ![Figma Shenanigans](Journal/images/FigmaShenanigans.png)
 
 
-## 07/05/2025
+## 07/06/2025
 I then needed to take the figma design, into an inkscape design (We will get to layout soon, I promise)
 
 An hour ish later me, realised it would be a good idea to put the ESP32 on first, so that is what I did.
 
-## 08/05/2025
+## 08/06/2025
 I continued laying out the ESP32 today, I realised It would be a good idea to rotate it, and I shifted around the pins to make it easier to route.
 ![Improved Pinout](Journal/images/microcontroller-ImprovedPinout.png)
 
@@ -192,3 +192,41 @@ I also decided to move the "stations" closer together.
 
 At this point I considered deleting the additional boxes and station text, to bring it more inline with my reference artwork. but I am yet to come to a descision.
 
+The above, I did indeed do.
+I also gradually found issues with my display schematic, where various things were not connected properly.
+
+And, a little more time later i got this:
+![Complete PCB Layout](Journal/images/pcb-complete.png)
+
+Now, I just need to clear up the silkscreen. Put mounting holes in and run DRC and stuff
+
+Oh, oops:
+![DRC Fails](Journal/images/drc-fails.png)
+
+To make my life easier, I made the PCB 4 layers, where 1 inner one is a completely undisturbed 5v plane, This is to help with routing and handling the 3A of current.
+
+## 15/06/2025
+Today, I decided to (finally) place my mounting holes. I decided on 6 to allow for more stability when it is mounted to it's frame.
+The layout I went for is
+
+X X X\
+X X X
+
+
+I also continued working on the DRC errors. But as you can see, I have a while to go
+![Total DRC Fails](Journal/images/drc-fails-totals.png)
+
+A fair few of these were thermal relief spokes being 1 not 2, so I fixed that.
+Additionally, quite a few others were due to the spacing of the USB C connector. This is fine in reality and JLC will manufacture it anyway.
+
+A few other DRC errors were related to the vias in the ESP32's GND pad. The size of these cannot be changed without modifying the footprint, However. 0.2000mm does fall above the minimum size requirements of JLC, so I adjusted my DRC settings to match.
+
+And now, with a bit of work. I'm down to
+![0 DRC Fails](Journal/images/drc-0-fails.png)
+
+I also realised at this point, I do need to somewhat label stations. I chose to do this via the Station Code.
+
+And here it is!
+![The PCB with silkscreen](Journal/images/pcb-with-silkscreen.png)
+
+A sensible person (not me) would go find the missing 3D models, although it's not getting a complete case, so the height of the components does not really affect me?
